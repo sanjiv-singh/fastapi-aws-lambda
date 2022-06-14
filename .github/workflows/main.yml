@@ -48,7 +48,7 @@ jobs:
       - name: Run Tests
         run: . venv/bin/activate && pytest
       - name: Create archive of dependencies
-        run: /
+        run: |
           cd ./venv/lib/python3.10/site-packages
           zip -r9 ../../../../api.zip .
       - name: Add api files to zip file
